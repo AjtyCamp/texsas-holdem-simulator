@@ -1,0 +1,32 @@
+{
+  "name": "texsas-holdem-simulator",
+  "version": "1.0.0",
+  "description": "Simple texas hold'em simulator.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "httpserver": "node -r esm src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjtyCamp/texsas-holdem-simulator.git"
+  },
+  "keywords": [
+    "ajtycamp",
+    "express",
+    "node",
+    "poker",
+    "Texas Hold'em"
+  ],
+  "author": "AjTyCamp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AjtyCamp/texsas-holdem-simulator/issues"
+  },
+  "homepage": "https://github.com/AjtyCamp/texsas-holdem-simulator#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  }
+}

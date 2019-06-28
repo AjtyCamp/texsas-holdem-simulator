@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Texas Hold'em simulator</title>
+    <script src="croupier.js"></script>
+    <script src="game.js"></script>
+	<script src="table.js"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body onload="table.init()">
+    <header class="l-header">
+      <h1>Texas Hold'em simulator</h1>
+      <button class="c-btn" id="start-btn">Start Game</button>
+      <button class="c-btn" id="next-btn">Next Card</button>
+      <button class="c-btn" id="reset-btn">Reset Game</button>
+      <label for="PlayersCount"></label><br>
+        <input type="number" class="c-input" placeholder="1" name="PlayersCount" min="1" max="4" value="1" id="player-count">
+    </header>
+    <main class="l-main">
+      <section class="l-section">
+        <div class="c-players">
+            <div class="c-player">
+                <h3>Player One</h3>
+                <span id="playerOneCard1" class="playerCard"></span>
+                <span id="playerOneCard2" class="playerCard"></span>
+            </div>
+            <div class="c-player">
+                <h3>Player Two</h3>
+                <span id="playerTwoCard1" class="playerCard"></span>
+                <span id="playerTwoCard2" class="playerCard"></span>
+            </div>
+            <div class="c-player">
+                <h3>Player Three</h3>
+                <span id="playerThreeCard1" class="playerCard"></span>
+                <span id="playerThreeCard2" class="playerCard"></span>
+            </div>
+          </div>
+	  </section>
+	  <section class="l-section">
+		<h2>Cards on table</h2>
+		<div class="c-table">
+			<div id="tableCard1" class="tableCard"></div>
+			<div id="tableCard2" class="tableCard"></div>
+			<div id="tableCard3" class="tableCard"></div>
+			<div id="tableCard4" class="tableCard"></div>
+			<div id="tableCard5" class="tableCard"></div>
+		</div>
+	  </section>
+	  <section class="l-section">
+		<h2>My hand</h2>
+		<div class="c-hand">
+			<div id="playerCard1" class="playerCard"></div>
+			<div id="playerCard2" class="playerCard"></div>
+		</div>
+	  </section>
+	</main>
+	<footer class="l-footer">
+			<h2>Probability of winning</h2>
+			<span id="percentage"></span>
+	</footer>
+  </body>
+</html>
