@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Texas Hold'em simulator</title>
+    <script src="croupier.js"></script>
+    <script src="game.js"></script>
+    <script src="table.js"></script>
+    <style>
+      body {
+        text-align: center;
+        background-color: darkgrey;
+      }
+    </style>
+  </head>
+  <body onload="table.init()">
+    <h2>Texas Hold'em simulator</h1>
+    <div>
+      <button id="start-btn">Start Game</button>
+      <button id="next-btn">Next Card</button>
+      <button id="reset-btn">Reset Game</button>
+    </div>
+    <div>
+      <div>
+        <label for="PlayersCount"></label>
+          <input type="number" placeholder="1" name="PlayersCount" min="1" max="4" value="1" id="player-count">
+      </div>
+    </div>
+    <div>
+      <div class="table">
+        <h3>Cards on table</h3>
+        <div id="tableCard1" class="tableCard"></div>
+        <div id="tableCard2" class="tableCard"></div>
+        <div id="tableCard3" class="tableCard"></div>
+        <div id="tableCard4" class="tableCard"></div>
+        <div id="tableCard5" class="tableCard"></div>
+      </div>
+      <div class="players">
+        <div class="player">
+            <h3>Player One</h3>
+            <div id="playerOneCard1" class="playerCard"></div>
+            <div id="playerOneCard2" class="playerCard"></div>
+        </div>
+        <div class="player">
+            <h3>Player Two</h3>
+            <div id="playerTwoCard1" class="playerCard"></div>
+            <div id="playerTwoCard2" class="playerCard"></div>
+        </div>
+        <div class="player">
+            <h3>Player Three</h3>
+            <div id="playerThreeCard1" class="playerCard"></div>
+            <div id="playerThreeCard2" class="playerCard"></div>
+        </div>
+      </div>
+      <div class="hand">
+        <h3>My hand</h3>
+        <div id="playerCard1" class="playerCard"></div>
+        <div id="playerCard2" class="playerCard"></div>
+        <div>
+          <div>Probability of winning</div>
+          <div id="percentage"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
