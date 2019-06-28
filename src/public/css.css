@@ -1,0 +1,116 @@
+*, 
+*:after,
+*:before{
+	box-sizing: border-box;
+}
+*:first-child{
+    margin-top: 0;
+}
+
+body{
+	background: #f9f9f9;
+	min-width: 320px;
+    position: relative;
+    
+}
+
+h1, h2, h3{
+    font-family: 'Lato', sans-serif;
+} 
+
+.l-header{
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+    background: #FFF;
+    padding-bottom: 20px;
+    box-shadow: -2px -2px 3px 0 rgba(0, 0, 0, 0.07);
+}
+
+.l-main{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.l-section{
+    padding: 20px;
+    background: #FFF;
+    border-radius: 2px;
+    flex: 1 1 33%;
+    margin-right: 15px;
+    box-shadow: -2px -2px 3px 0 rgba(0, 0, 0, 0.07);
+}
+
+.l-section h2{
+    text-align: center;
+}
+
+.l-footer{
+    padding: 20px;
+    text-align: center;
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: -2px -2px 3px 0 rgba(0, 0, 0, 0.07);
+}
+
+.c-btn{
+    border: none;
+    background: #d3000f;
+    padding: 15px 20px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.c-input{
+    padding: 0px 20px;
+    color: black;
+    border: 1px solid  #b9b9b9;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 4px;
+    outline: 0;
+}
+.c-players{
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+.c-players .c-player{
+    display: inline-block;
+}
+
+.c-player{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.c-player span{
+    font-size: 100px;
+}
+
+.c-table{
+    display: flex;
+    justify-content: space-between;
+    font-size: 100px;
+}
+
+.c-hand{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.c-hand div{
+    padding: 15px;
+}
+
+#percentage{
+    font-family: 'Lato', sans-serif;
+}
+
+.♥, .♦{
+    color: #d3000f;
+}
