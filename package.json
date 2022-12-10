@@ -27,6 +27,6 @@
   "homepage": "https://github.com/AjtyCamp/texsas-holdem-simulator#readme",
   "dependencies": {
     "esm": "^3.2.25",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
